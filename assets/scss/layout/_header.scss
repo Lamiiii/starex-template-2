@@ -1,0 +1,120 @@
+header {
+  // background-image: url(/images/plane.png);
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // width: 100%;
+
+  .logo {
+    display: flex;
+    margin-top: 28px;
+
+    svg {
+      margin-left: 100px;
+      margin-top: 20px;
+    }
+    h2 {
+      font-size: $fontsize-16 + 9;
+      font-weight: bold;
+      color: $black-color;
+    }
+  }
+
+  .navigation-list {
+    ul {
+      display: flex;
+      margin: 15px;
+      margin-top: 36px;
+      list-style-type: none;
+
+      li {
+        padding: 20px;
+
+        a {
+          color: $black-color;
+          text-decoration: none;
+          font-size: $fontsize-16;
+          font-family: $font-family;
+        }
+      }
+    }
+  }
+
+  .col-2 {
+    .apply-btn {
+      display: flex;
+      margin-top: 40px;
+
+      .assign button {
+        @include button;
+      }
+
+      .declaration button {
+        @include button;
+        margin-left: 6px;
+      }
+    }
+  }
+}
+
+@media (max-width: 2000px) {
+  header .apply-btn .icon {
+    display: none;
+  }
+
+  header .logo .bi-list {
+    display: none;
+    margin-top: 40px;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 990px) {
+  header .navigation-list ul li {
+    display: none;
+  }
+
+  header .apply-btn button {
+    display: none;
+  }
+
+  header .logo h2 {
+    font-size: 3rem;
+  }
+
+  header .logo .bi-list {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 986px) {
+  header .apply-btn .icon {
+    display: inline-block;
+    display: flex;
+  }
+
+  header .apply-btn .icon {
+    font-size: 3rem;
+    margin: 10px;
+  }
+
+  header .apply-btn .icon .bi-cart {
+    color: $primary-color;
+    border: 1px solid rgb(199, 221, 240);
+    background-color: rgb(199, 221, 240);
+    border-radius: 3rem;
+    padding: 10px;
+  }
+  header .apply-btn .icon .bi-file-earmark-ruled {
+    color: orange;
+    border: 1px solid rgb(238, 206, 146);
+    border-radius: 3rem;
+    padding: 10px;
+    background-color: rgb(238, 206, 146);
+  }
+
+  header .apply-btn .icon .bi-person {
+    background-color: gainsboro;
+    border-radius: 3rem;
+    padding: 10px;
+  }
+}

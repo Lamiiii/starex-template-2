@@ -1,0 +1,35 @@
+#programs {
+  .application {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .img {
+    display: flex;
+    margin-top: 35px;
+    img {
+      margin: 5px;
+    }
+  }
+  h3 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: $fontsize-16;
+  }
+}
+
+@media (max-width: 1000px) {
+  #programs .phone img {
+    display: none;
+  }
+
+  #programs .application {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,29 @@
+footer {
+  background-color: gainsboro;
+  h3 {
+    font-size: 30px;
+    color: $primary-color;
+  }
+
+  ul {
+    li {
+      list-style: none;
+      color: $black-color;
+      font-size: 25px;
+      line-height: 40px;
+      font-weight: bold;
+
+      a {
+        text-decoration: none;
+        color: $text-color;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 995px) {
+  footer ul li a {
+    display: none;
+  }
+}

@@ -1,0 +1,33 @@
+#about-cards{
+    margin: 100px;
+
+    h3{
+        font-size: $fontsize-16*2;
+        margin-left: 20px;
+    }
+
+    .padding{
+    margin: 10px;
+    border: 1px solid  $text-color;
+    .text{
+    padding: 5px;
+    color: $text-color;
+
+   
+    h4{
+        font-size: $fontsize-16+6;
+        color: black;
+    }
+
+    p{
+        font-size: $fontsize-16;
+    }
+    }
+}
+}
+
+@media(max-width:772px){
+    #about-cards{
+        font-size: $fontsize-16*2;
+    }
+}

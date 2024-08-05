@@ -1,0 +1,125 @@
+#about-calculator {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+
+
+   .back-color{
+    background-color: rgb(238, 237, 237);
+    width: 700px;
+  
+  }
+  .center {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .calculator {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      font-size: $fontsize-16 * 2+4;
+      align-self: center;
+    }
+    p {
+      font-size: $fontsize-16 + 2;
+      text-align: center;
+    }
+  }
+
+  .select {
+    select {
+      padding: 10px 16px;
+      width: 244px;
+      font-size: $fontsize-16;
+      background-color: $white-color;
+      color: $black-color;
+      margin: 10px;
+      border: 1px solid $text-color;
+    }
+  }
+  .number {
+    input {
+      margin: 10px;
+      padding: 10px 16px;
+      width: 210px;
+      background-color: $white-color;
+      color: $text-color;
+      border: 1px solid $text-color;
+      font-size: $fontsize-16;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    margin-top: 12px;
+
+    button {
+      @include button;
+      width: 250px;
+      margin-left: -100px;
+    }
+
+    span {
+      margin: 15px;
+      margin-left: 50px;
+      font-weight: bold;
+      font-size: $fontsize-16 + 7;
+    }
+    .zero {
+      display: none;
+      overflow: hidden;
+    }
+  }
+}
+
+
+
+@media (max-width: 1000px) {
+  #about-calculator .buttons span {
+    display: none;
+  }
+
+  #about-calculator .buttons {
+    margin-left: 100px;
+  }
+
+  #about-calculator .back-color .buttons button {
+    padding: 16px 20px;
+    width: 300px;
+    font-size: $fontsize-16 * 2;
+    height: 60px;
+    text-align: center;
+  }
+
+  #about-calculator .buttons .zero {
+    display: inline-block;
+    margin-left: 10px;
+    background-color: transparent;
+    color: gray;
+    border: 1px solid $text-color;
+  }
+
+  #about-calculator .back-color .calculator {
+    font-size: $fontsize-16 * 3;
+  }
+
+  #about-calculator .back-color p {
+    font-size: $fontsize-16 + 2;
+  }
+
+  #about-calculator .back-color .select select {
+    padding: 10px 16px;
+    width: 314px;
+    font-size: $fontsize-16 + 10;
+  }
+
+  #about-calculator .back-color .number input {
+    padding: 10px 16px;
+    width: 280px;
+    font-size: $fontsize-16 + 10;
+  }
+}
